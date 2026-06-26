@@ -1,0 +1,64 @@
+{
+  "@@locale": "en",
+  "appTitle": "Noor's Journey",
+  "arabicTitle": "رحلة نُور",
+  "splashTagline": "A warm learning adventure for curious kids",
+  "chooseLanguage": "Choose your language",
+  "arabic": "Arabic",
+  "english": "English",
+  "continueButton": "Continue",
+  "nicknameLabel": "Nickname",
+  "nicknameHint": "Type your hero name",
+  "chooseAvatar": "Choose your avatar",
+  "saveProfile": "Save profile",
+  "helloChild": "Hello, {name}!",
+  "homeSubtitle": "Help Noor light his lantern through playful learning worlds.",
+  "startJourney": "Start Journey",
+  "dailyNoor": "Daily Noor",
+  "notebook": "Noor's Invention Book",
+  "settings": "Settings",
+  "journeyMap": "Journey Map",
+  "challengeNode": "Challenge {number}",
+  "lockedSoon": "More worlds soon",
+  "worldTitle": "Al-Khwarizmi Lab",
+  "worldIntro": "Mishmish pressed a strange button and the numbers escaped! Solve 3 gentle challenges to help Noor glow again.",
+  "enterLab": "Enter the lab",
+  "hint": "Hint",
+  "showHint": "Show hint",
+  "correctFeedback": "Wonderful! You helped Noor collect a spark.",
+  "wrongFeedback": "Good try! Take a breath and try another answer.",
+  "nextChallenge": "Next challenge",
+  "finishJourney": "Light the lantern",
+  "rewardTitle": "Great job! Noor's lantern is glowing.",
+  "rewardPageAdded": "A new page was added to Noor's Invention Book:",
+  "rewardBookPage": "The Lost Robo-Jamal Algorithm",
+  "rewardMishmishNote": "Mishmish's note: I promise I won't press strange buttons again… probably.",
+  "openNotebook": "Open notebook",
+  "playAgain": "Play again",
+  "notebookTitle": "Noor's Invention Book",
+  "notebookEmpty": "Complete Al-Khwarizmi Lab to add your first invention page.",
+  "dailyNoorTitle": "Daily Noor",
+  "todaysVerse": "Today's verse",
+  "simpleMeaning": "Simple meaning",
+  "todaysAction": "Today's action",
+  "placeholderOnly": "Placeholder field — Qur'an text will be curated later.",
+  "languageSwitch": "Language",
+  "resetProgress": "Reset progress",
+  "mishmish": "Mishmish",
+  "noor": "Noor",
+  "backToHome": "Back to home",
+  "@helloChild": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@challengeNode": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  }
+}

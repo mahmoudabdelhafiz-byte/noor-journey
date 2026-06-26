@@ -1,0 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:noor_journey/l10n/app_localizations.dart';
+import '../../../core/app_state.dart';
+import '../../../core/widgets.dart';
+import '../../../data/mock_challenges.dart';
+
+class ChallengeScreen extends ConsumerStatefulWidget { const ChallengeScreen({super.key, required this.id}); final int id; @override ConsumerState<ChallengeScreen> createState()=>_S(); }
+class _S extends ConsumerState<ChallengeScreen>{ String? selected; bool hint=false; @override Widget build(BuildContext context){ final l=AppLocalizations.of(context)!; final lang=Localizations.localeOf(context).languageCode; final c=challenges.firstWhere((e)=>e.id==widget.id); final correct=selected==c.correctAnswer.of(lang); return NoorScaffold(title:l.challengeNode(widget.id), child:ListView(padding:const EdgeInsets.all(24), children:[WarmCard(child:Column(children:[const Text('🔢✨', style:TextStyle(fontSize:60)), Text(c.question.of(lang), textAlign:TextAlign.center, style:Theme.of(context).textTheme.titleLarge)])), const SizedBox(height:16), ...c.options.map((o){ final text=o.of(lang); return Padding(padding:const EdgeInsets.only(bottom:10), child:FilledButton.tonal(onPressed:()=>setState(()=>selected=text), style:FilledButton.styleFrom(backgroundColor:selected==text?Theme.of(context).colorScheme.secondaryContainer:null), child:Text(text)));}), if(selected!=null) WarmCard(child:Text(correct?l.correctFeedback:l.wrongFeedback, textAlign:TextAlign.center)), TextButton.icon(onPressed:()=>setState(()=>hint=!hint), icon:const Icon(Icons.lightbulb), label:Text(l.showHint)), if(hint) WarmCard(child:Text('${l.hint}: ${c.hint.of(lang)}')), const SizedBox(height:12), if(correct) FilledButton(onPressed:(){ref.read(appStateProvider).markCompleted(widget.id); context.go(widget.id<3?'/challenge/${widget.id+1}':'/reward');}, child:Text(widget.id<3?l.nextChallenge:l.finishJourney))]));}}
