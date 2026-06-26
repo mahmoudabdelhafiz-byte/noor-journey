@@ -1,0 +1,64 @@
+{
+  "@@locale": "ar",
+  "appTitle": "رحلة نُور",
+  "arabicTitle": "رحلة نُور",
+  "splashTagline": "مغامرة تعليمية دافئة للأطفال الفضوليين",
+  "chooseLanguage": "اختر اللغة",
+  "arabic": "العربية",
+  "english": "English",
+  "continueButton": "متابعة",
+  "nicknameLabel": "الاسم اللطيف",
+  "nicknameHint": "اكتب اسم البطل",
+  "chooseAvatar": "اختر الصورة الرمزية",
+  "saveProfile": "حفظ الملف",
+  "helloChild": "مرحباً يا {name}!",
+  "homeSubtitle": "ساعد نُور على إضاءة فانوسه عبر عوالم تعليمية مرحة.",
+  "startJourney": "ابدأ الرحلة",
+  "dailyNoor": "نُور اليوم",
+  "notebook": "دفتر اختراعات نُور",
+  "settings": "الإعدادات",
+  "journeyMap": "خريطة الرحلة",
+  "challengeNode": "التحدي {number}",
+  "lockedSoon": "عوالم أخرى قريباً",
+  "worldTitle": "مختبر الخوارزمي",
+  "worldIntro": "ضغط مشمش زراً غريباً فهربت الأرقام! حل ٣ تحديات لطيفة لمساعدة نُور على الإضاءة من جديد.",
+  "enterLab": "ادخل المختبر",
+  "hint": "تلميح",
+  "showHint": "إظهار التلميح",
+  "correctFeedback": "رائع! ساعدت نُور على جمع شرارة.",
+  "wrongFeedback": "محاولة جميلة! خذ نفساً وجرب إجابة أخرى.",
+  "nextChallenge": "التحدي التالي",
+  "finishJourney": "أضئ الفانوس",
+  "rewardTitle": "أحسنت! أضاء فانوس نُور.",
+  "rewardPageAdded": "تمت إضافة صفحة جديدة إلى دفتر اختراعات نُور:",
+  "rewardBookPage": "خوارزمية روبو جمال التائه",
+  "rewardMishmishNote": "ملاحظة مشمش: أعدك أنني لن أضغط على الأزرار الغريبة مرة أخرى… غالباً.",
+  "openNotebook": "افتح الدفتر",
+  "playAgain": "العب مرة أخرى",
+  "notebookTitle": "دفتر اختراعات نُور",
+  "notebookEmpty": "أكمل مختبر الخوارزمي لإضافة أول صفحة اختراع.",
+  "dailyNoorTitle": "نُور اليوم",
+  "todaysVerse": "آية اليوم",
+  "simpleMeaning": "المعنى البسيط",
+  "todaysAction": "فكرة اليوم",
+  "placeholderOnly": "حقل مؤقت — سيتم تنسيق نص القرآن لاحقاً.",
+  "languageSwitch": "اللغة",
+  "resetProgress": "إعادة التقدم",
+  "mishmish": "مشمش",
+  "noor": "نُور",
+  "backToHome": "العودة للرئيسية",
+  "@helloChild": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@challengeNode": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  }
+}
